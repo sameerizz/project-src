@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PIXL AI - Image Generation</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="/__/firebase/10.13.1/firebase-app-compat.js"></script>
+    <script defer src="/__/firebase/10.13.1/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.13.1/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/10.13.1/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+</head>
+
+<body>
+    <header class="box1">
+        <h1>PIXL AI</h1>
+        <nav class="container">
+            <div class="tabs">
+                <button class="tab active" data-tab="home">Home</button>
+                <button class="tab" data-tab="generate">Generate</button>
+                <button class="tab" data-tab="enhance">Enhance</button>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" class="content active">
+            <div class="image-grid">
+                <div class="image-item">
+                    <img src="https://ideogram.ai/api/images/direct/5MmOoNP1Thepwfm4y_7PzA.jpg" alt="PIXL AI logo">
+                    <p class="image-description">Dark Logo</p>
+                </div>
+                <div class="image-item">
+                    <img src="https://ideogram.ai/api/images/direct/znC3AtOlTOK14_Aqw3MHkg.jpg" alt="PIXL AI logo">
+                    <p class="image-description">Donut Land</p>
+                </div>
+                <div class="image-item">
+                    <img src="https://ideogram.ai/api/images/direct/G8Au6X4vQRGEjttYMjOrdw.jpg" alt="Squid GPT sign">
+                    <p class="image-description">CRT TV</p>
+                </div>
+                <div class="image-item">
+                    <img src="https://ideogram.ai/api/images/direct/VTTXDo3dQZKBWfTqEORe3w.jpg" alt="Futuristic octopus">
+                    <p class="image-description">Retro TV</p>
+                </div>
+                <div class="image-item">
+                    <img src="https://ideogram.ai/api/images/direct/MazKzFJFRSWkQBgT0iZSBQ.jpg" alt="SAMEERIZZ text">
+                    <p class="image-description">Underwater Text</p>
+                </div>
+                <div class="image-item">
+                    <img src="https://ideogram.ai/api/images/direct/QGrve_0ERSqzsPy86ucQMQ.jpg" alt="PIXL AI TV">
+                    <p class="image-description">Squid Game</p>
+                </div>
+                <div class="image-item">
+                    <img src="https://ideogram.ai/api/images/direct/Kptm1UTSQsyvSB3etig7dw.jpg" alt="RIZZ sign">
+                    <p class="image-description">Cave RIZZ</p>
+                </div>
+                <div class="image-item">
+                    <img src="https://ideogram.ai/api/images/direct/JgapOv7pR0mUf0lJpA9qqQ.jpg" alt="Abstract patterns">
+                    <p class="image-description">Abstract Art</p>
+                </div>
+                <div class="image-item">
+                    <img src="https://ideogram.ai/api/images/direct/0Yh1FD99Tk6DaxoqnGuBVw.jpg" alt="AI Statue of Liberty">
+                    <p class="image-description">Cat Liberty</p>
+                </div>
+            </div>
+        </section>
+        <section id="generate" class="content">
+            <div class="box4">
+                <form id="image-form">
+                    <input class="bat active" type="text" id="prompt" placeholder="Generate Anything" required>
+                    <button class="bat active" type="submit">Imagine</button>
+                </form>
+            </div>
+            <div id="result"></div>
+        </section>
+
+        <section id="enhance" class="content">
+            <div class="enhance-container">
+              <div class="enhance-background">
+                <h2 class="enhance-text">Image Enhancement Coming Soon</h2>
+              </div>
+            </div>
+          </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
